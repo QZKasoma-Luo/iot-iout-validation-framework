@@ -14,7 +14,6 @@ A comprehensive multi-tiered validation framework for IoT to IoUT (Internet of U
 pandas>=1.3.0
 numpy>=1.21.0
 matplotlib>=3.4.0
-seaborn>=0.11.0
 scikit-learn>=0.24.0
 ```
 
