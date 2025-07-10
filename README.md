@@ -4,7 +4,7 @@ A comprehensive multi-tiered validation framework for IoT to IoUT (Internet of U
 
 ## System Requirements
 
-- This Program has only been tested under MacOS/Linux (ARM)
+- This program has only been tested under MacOS/Linux (ARM)
 
 ### Python Version
 
