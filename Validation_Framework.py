@@ -679,6 +679,22 @@ if __name__ == "__main__":
     real_muddy_iout_report, real_muddy_iout_score = validator_iout.run_full_validation()
     
     print("\n" + "="*50 + "\n")
+
+    print("Validate Merged_final_IoT DDOS Dataset")
+    validator_iout = DDoSValidationFramework('Merged_final_IoTMerged_final_IoT_DDoS', 'Data_Set/Merged_final_IoT_DDoS_Dataset.csv')
+    real_1_5_iout_report, real_1_5iout_score = validator_iout.run_full_validation()
+
+    print("\n" + "="*50 + "\n")
+    
+    print("Validate Merged_final_IoUT_70cm")
+    validator_iout = DDoSValidationFramework('Merged_final_IoUT_70cm', 'Data_Set/Merged_final_IoUT_70cm.csv')
+    real_1_iout_report, real_1_iout_score = validator_iout.run_full_validation()
+    
+    print("\n" + "="*50 + "\n")
+
+    print("Validate Merged_final_IoUT_shallow")
+    validator_iout = DDoSValidationFramework('Merged_final_IoUT_shallow', 'Data_Set/Merged_final_IoUT_shallow.csv')
+    real_muddy_iout_report, real_muddy_iout_score = validator_iout.run_full_validation()
     
     # Cross-dataset validation
     print("=== Cross-dataset Validation ===")
@@ -687,7 +703,10 @@ if __name__ == "__main__":
         'InLab_IoUT': 'Data_Set/inlab_iout_combined.csv',
         'RealWorld_1.5M': 'Data_Set/real_world_ddos_1.5m.csv',
         'RealWorld_1M': 'Data_Set/real_world_ddos_1m.csv',
-        'RealWorld_Muddy': 'Data_Set/real_world_ddos_seashore_muddy.csv'
+        'RealWorld_Muddy': 'Data_Set/real_world_ddos_seashore_muddy.csv',
+        'Merged_final_IoT_DDoS': 'Data_Set/Merged_final_IoT_DDoS_Dataset.csv',
+        'Merged_final_IoUT_70cm': 'Data_Set/Merged_final_IoUT_70cm.csv',
+        'Merged_final_IoUT_shallow': 'Data_Set/Merged_final_IoUT_shallow.csv'
     }
     
     cross_validator = CrossDatasetValidator(datasets)
