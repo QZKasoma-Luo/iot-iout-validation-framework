@@ -2,6 +2,19 @@
 
 A comprehensive multi-tiered validation framework for IoT to IoUT (Internet of Underwater Things) data quality assurance, supporting laboratory to real-world deployment scenarios.
 
+# Data-Scoring
+
+A Python Program for scoring the collected data sets and save the scores in CSV files to make it easier to compare the data sets
+
+# Command to Run
+
+Validation_Framework.py and Data_Scoring.py are separated program and need to run it with two different command
+
+```bash
+python Validation_Framework.py
+python Data_Scoring.py
+```
+
 ## System Requirements
 
 - This program has only been tested under MacOS/Linux (ARM)
