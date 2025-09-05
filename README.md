@@ -6,6 +6,10 @@ A comprehensive multi-tiered validation framework for IoT to IoUT (Internet of U
 
 A Python Program for scoring the collected data sets and save the scores in CSV files to make it easier to compare the data sets
 
+# Enhanced_Model Jupyter Notebook
+
+An enhanced machine learning code for detecting Distributed Denial of Service (DDoS) attacks in IoT networks, with extensive robustness testing under various network noise conditions.
+
 # Command to Run
 
 Validation_Framework.py and Data_Scoring.py are separated program and need to run it with two different command
@@ -13,6 +17,8 @@ Validation_Framework.py and Data_Scoring.py are separated program and need to ru
 ```bash
 python Validation_Framework.py
 python Data_Scoring.py
+
+Run ALL in Enhanced_Model.ipynb
 ```
 
 ## System Requirements
